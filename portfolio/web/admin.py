@@ -3,6 +3,9 @@
 from django.contrib import admin
 from .models import Project, Technology
 
+
+
+
 @admin.register(Technology)
 class TechnologyAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("name",)}
